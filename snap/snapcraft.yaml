@@ -1,0 +1,13 @@
+name: snapgrav
+version: '0.1'
+summary: Deploy stunning Grav blogs with Snapd.
+description: |
+My first try at making a snapd container. Grav is a wonderfully simple 
+blogging platform, deployed in seconds.
+grade: devel
+confinement: strict
+parts:
+  gnu-hello:
+    plugin: autotools
+    source: http://ftp.gnu.org/gnu/hello/hello-2.10.tar.gz
+  
